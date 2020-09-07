@@ -30,5 +30,19 @@ class LearningUnitTestWithSwiftTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_NumberOfVowels() {
+        let vc = ViewController()
+        let string = "sukhmani"
+        let numberOfVowels = vc.numberOfVowels(in: string)
+        XCTAssertEqual(numberOfVowels, 3, "should find 3 vowel in sukhmani.")
+    }
+    
+    func test_CountOfVowels() {
+        let vc = ViewController()
+        let string = "sukhmanii"
+        let numberOfVowels = vc.countOfVowels(in: string)
+        XCTAssertEqual(numberOfVowels, 4, "should find 4 vowel in sukhmani.")
+    }
 
 }
